@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap 5.0.2 Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <!--JavaScript Plug-in-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/b129219756.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Avatars -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-avatar@1.3.1/dist/avatar.css">
+
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Technical Documentation Page</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" class="scrollspy-example" tabindex="0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-2 bg-dark">
+                <nav id="navbar" class="navbar navbar-vertical fixed-start fixed-top navbar-expand-md navbar-dark 
+                flex-md-column flex-row position-sticky">
+                    <!-- Brand -->
+                    <header>
+                        <a id="brand" class="navbar-brand text-white" href="#">
+                            <img src="images/logo.svg" class="navbar-brand-img mx-auto" alt="Sass" style="height:60px;">
+                            <i>Tutorial</i></a>
+                    </header>
+                    <hr>
+                    <!-- Toggler -->
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarVertical" aria-controls="navbarVertical" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Collapse -->
+                    <div class="navbar-collapse collapse align-items-start" id="navbarVertical">
+
+                        <!-- Navigation -->
+                        <ul class="nav nav-pills me-auto my-2 py-md-3 flex-column sticky-top">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#Sass_Intro"><i class="fas fa-highlighter"></i>
+                                    Sass Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#Sass_Installation"><i class="fas fa-tools"></i>
+                                    Sass Installation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#Sass_Variables"><i class="fab fa-vimeo-v"></i>
+                                    Sass Variables</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#Sass_Nesting"><i class="fas fa-home"></i>
+                                    Sass Nesting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#Sass_Import"><i class="fas fa-upload"></i>
+                                    Sass Import</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#Sass_Mixin"><i class="fas fa-recycle"></i>
+                                    Sass Mixin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#Sass_Extend"><i
+                                        class="fas fa-external-link-alt"></i> Sass Extend</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div id="base" class="col-md-8 col-lg-9">
+                <div class="container">
+                    <!--Main Content-->
+                    <main id="main-doc">
+                        <h1><img id="logo" src="images/logo.svg" alt="Sass"> <i>Tutorial</i></h1>
+                        <section id="Sass_Intro" class="main-section">
+                            <header>Sass Intro</header>
+                            <label for="ul01"><strong>What is Sass?</strong></label>
+                            <ul id="ul01">
+                                <li><b>Sass</b> stands for <b>S</b>yntactically <b>A</b>wesome <b>S</b>tyle<b>s</b>heet
+                                </li>
+                                <li>Sass is an extension to CSS</li>
+                                <li>Sass is a CSS pre-processor</li>
+                                <li>Sass is completely compatible with all versions of CSS</li>
+                                <li>Sass reduces repetition of CSS and therefore saves time</li>
+                                <li>Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006</li>
+                                <li>Sass is free to download and use</li>
+                            </ul>
+                            <label for="p01"><strong>Why Use Sass?</strong></label>
+                            <p id="p01">Stylesheets are getting larger, more complex, and harder to maintain. This is
+                                where
+                                a
+                                CSS pre-processor can help. Sass lets you use features that do not exist in CSS, like
+                                variables,
+                                nested rules, mixins, imports, inheritance, built-in functions, and other stuff.</p>
+                            <label for="p02"><strong>How Does Sass Work?</strong></label>
+                            <p>A browser does not understand Sass code. Therefore, you will need a Sass pre-processor to
+                                convert
+                                Sass code into standard CSS. This process is called transpiling. So, you need to give a
+                                transpiler (some kind of program) some Sass code and then get some CSS code back.</p>
+                            <label for="ul02"><b>Sass Function References</b></label>
+                            <ul id="ul02" class="list-group m-2 col-md-10 col-lg-8S">
+                                <li class="list-group-item list-group-item-action">Sass String Functions</li>
+                                <li class="list-group-item list-group-item-action">Sass Numeric Functions</li>
+                                <li class="list-group-item list-group-item-action">Sass List Functions</li>
+                                <li class="list-group-item list-group-item-action">Sass Map Functions</li>
+                                <li class="list-group-item list-group-item-action">Sass Selector Functions</li>
+                                <li class="list-group-item list-group-item-action">Sass Introspection Functions</li>
+                                <li class="list-group-item list-group-item-action">Sass Color Functions</li>
+                            </ul>
+                        </section>
+                        <section id="Sass_Installation" class="main-section">
+                            <header>Sass Installation</header>
+                            <label for="ul03"><strong>System Requirements for Sass</strong></label>
+                            <ul id="ul03">
+                                <li><mark>Operating system</mark> - Sass is platform independent</li>
+                                <li><mark>Browser support</mark> - Sass works in Edge/IE (from IE 8), Firefox, Chrome,
+                                    Safari,
+                                    Opera</li>
+                                <li><mark>Programming language</mark> - Sass is based on Ruby</li>
+                            </ul>
+                            <label for="p03"><strong>Official Sass Web Site</strong></label>
+                            <p id="p03">Read more about Sass at the official Sass web site: <a
+                                    href="https://sass-lang.com/">https://sass-lang.com/</a></p>
+                            <label for="p04"><strong>Install Sass</strong></label>
+                            <p id="p04">There are several ways to install Sass in your system. There are many
+                                applications
+                                that will get you up and running with Sass in a few minutes for Mac, Windows, and Linux.
+                                Some of these are free, but some are paid apps.<br></p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4>Applications</h4>
+                                    <img src="images/mouse.svg" alt="Mouse" class="mx-auto my-3 d-block img-fluid">
+                                    <ul id="ul04" class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item"><a href="https://codekitapp.com/"
+                                                class="link-dark">CodeKit</a> (Paid) Mac
+                                        </li>
+                                        <li class="list-group-item"><a href="http://www.vanamco.com/ghostlab/"
+                                                class="link-dark">Ghostlab</a>
+                                            (Paid) Mac Windows</li>
+                                        <li class="list-group-item"><a href="http://hammerformac.com/"
+                                                class="link-dark">Hammer</a> (Paid) Mac
+                                        </li>
+                                        <li class="list-group-item"><a href="http://livereload.com/"
+                                                class="link-dark">LiveReload</a> (Paid,
+                                            Open Source) Mac Windows</li>
+                                        <li class="list-group-item"><a href="https://prepros.io/"
+                                                class="link-dark">Prepros</a> (Paid) Mac
+                                            Windows Linux</li>
+                                        <li class="list-group-item"><a href="http://scout-app.io/"
+                                                class="link-dark">Scout-App</a> (Free, Open
+                                            Source) Windows Linux Mac</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h4>Command Line</h4>
+                                    <img src="images/keyboardsvg.svg" alt="Keyboard"
+                                        class="mx-auto my-3 d-block img-fluid">
+                                    <div class="card border-light mb-3">
+                                        <div class="card-header">
+                                            Install Sass on the command line
+                                        </div>
+                                        <ul id="ul05" class="list-group list-group-flush">
+                                            <li class="list-group-item">sass source/stylesheets/index.scss
+                                                build/stylesheets/index.css</li>
+                                            <li class="list-group-item">npm install -g sass</li>
+                                            <li class="list-group-item">choco install sass</li>
+                                            <li class="list-group-item">brew install sass/sass/sass</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>You can read more about them here: <a
+                                    href="https://sass-lang.com/install">sass-lang.com/install</a></p>
+                        </section>
+                        <section id="Sass_Variables" class="main-section">
+                            <header>Sass Variables</header>
+                            <p id="p05">Variables are a way to store information that you can re-use later.</p>
+                            <label for="ul06">With Sass, you can store information in variables, like:</label>
+                            <ul id="ul06">
+                                <li>strings</li>
+                                <li>numbers</li>
+                                <li>colors</li>
+                                <li>booleans</li>
+                                <li>lists</li>
+                                <li>nulls</li>
+                            </ul>
+                            <div class="alert alert-success">
+                                <strong>Sass Variable Syntax:</strong><code> $variablename:</code> value;
+                            </div>
+                            <label for="p06"><strong>Using Sass <kbd>!global</kbd></strong></label>
+                            <p id="p06">The default behavior for variable scope can be overridden by using the
+                                <code>!global</code> switch. <code>!global</code> indicates that a variable is global,
+                                which
+                                means that it is accessible on all levels
+                            </p>
+                            <div class="alert alert-warning">
+                                <strong>Tip:</strong> Global variables should be defined outside any rules. It could be
+                                wise
+                                to define all global variables in its own file, named "_globals.scss", and include the
+                                file
+                                with the <code>@include</code> keyword.
+                            </div>
+                        </section>
+                        <section id="Sass_Nesting" class="main-section">
+                            <header>Sass Nesting</header>
+                            <label for="p07"><strong>Sass Nested Rules</strong></label>
+                            <p id="p07">Sass lets you nest CSS selectors in the same way as HTML<br>
+                                Look at an example of some Sass code for a site's navigation:</p>
+                            <div class="row">
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-dark bg-light h-100">
+                                        <div class="card-header">
+                                            <p>SCSS Syntax:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-light bg-info h-100">
+                                        <div class="card-header">
+                                            <p>CSS Output:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p id="p08">Notice that in Sass, the <code>ul</code>, <code>li</code>, and <code>a</code>
+                                selectors are nested inside the <code>nav</code> selector.</p>
+                            <label><strong>Sass Nested Properties</strong></label>
+                            <div class="row">
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-dark bg-light h-100">
+                                        <div class="card-header">
+                                            <p>SCSS Syntax:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+font: {
+    family: Helvetica, sans-serif;
+    size: 18px;
+    weight: bold;
+}
+
+text: {
+    align: center;
+    transform: lowercase;
+    overflow: hidden;
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-white bg-info h-100">
+                                        <div class="card-header">
+                                            <p>CSS Output:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+font-family: Helvetica, sans-serif;
+font-size: 18px;
+font-weight: bold;
+
+text-align: center;
+text-transform: lowercase;
+text-overflow: hidden;
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="Sass_Import" class="main-section">
+                            <header>Sass @import</header>
+                            <label for="p09"><strong>Sass Importing Files</strong></label>
+                            <p id="p09">
+                                Just like CSS, Sass also supports the <code>@import</code> directive.<br>
+                                The <code>@import</code> directive allows you to include the content of one file in
+                                another.<br>
+                                The CSS <code>@import</code> directive has a major drawback due to performance issues;
+                                it
+                                creates an extra HTTP request each time you call it. However, the Sass
+                                <code>@import</code>
+                                directive includes the file in the CSS; so no extra HTTP call is required at runtime!
+                            </p>
+                            <div class="alert alert-success">
+                                <b>Sass Import Syntax:</b><code> @import</code> filename;
+                            </div>
+                            <p id="p10">
+                                <b>Tip:</b> You do not need to specify a file extension, Sass automatically assumes that
+                                you
+                                mean a .sass or .scss file. You can also import CSS files. The <code>@import</code>
+                                directive imports the file and any variables or mixins defined in the imported file can
+                                then
+                                be used in the main file
+                            </p>
+                            <div class="alert alert-success">
+                                <b>Example:</b><br>
+                                <code> @import</code> "variables";<br>
+                                <code> @import</code> "colors";<br>
+                                <code> @import</code> "reset";<br>
+                            </div>
+                            <label for="p11"><b>Sass Partials</b></label>
+                            <p id="p11">By default, Sass transpiles all the .scss files directly. However, when you want
+                                to
+                                import a file, you do not need the file to be transpiled directly.
+                                <br>
+                                Sass has a mechanism for this: If you start the filename with an underscore, Sass will
+                                not
+                                transpile it. Files named this way are called partials in Sass.
+                                <br>
+                                So, a partial Sass file is named with a leading underscore:
+                            </p>
+                            <div class="alert alert-success">
+                                <b>Sass Partial Syntax:</b><code>  _filename;</code>
+                            </div>
+                        </section>
+                        <section id="Sass_Mixin" class="main-section">
+                            <header>Sass @mixin</header>
+                            <label for="p12"><b>Sass Mixins</b></label>
+                            <p id="p12">The <code>@mixin</code> directive lets you create CSS code that is to be reused
+                                throughout the website.<br>The <code>@include</code> directive is created to let you use
+                                (include) the mixin.</p>
+                            <label for="p13"><b>Defining a Mixin</b></label>
+                            <p id="p13">A mixin is defined with the <code>@mixin</code> directive.</p>
+                            <div class="row">
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-dark bg-light h-100">
+                                        <div class="card-header">
+                                            <p>SCSS @mixin Syntax:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+@mixin name {
+    property: value;
+    property: value;
+    property: value;
+    ...
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-light bg-info h-100">
+                                        <div class="card-header">
+                                            <p>SCSS Syntax:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-warning">
+                                <strong>Tip:</strong> A tip on hyphens and underscore in Sass: Hyphens and underscores
+                                are
+                                considered to be the same. This means that <code>@mixin</code> important-text { } and
+                                @mixin
+                                important_text { } are considered as the same mixin!
+                            </div>
+                            <label for="p14"><b>Using a Mixin</b></label>
+                            <p id="p14">The <code>@include</code> directive is used to include a mixin.</p>
+                            <div class="row">
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-dark bg-light h-100">
+                                        <div class="card-header">
+                                            <p>SCSS @include mixin Syntax:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+selector {
+    @include: mixin-name;
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-light bg-info h-100">
+                                        <div class="card-header">
+                                            <p>SCSS Syntax:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+.danger  {
+    @include important-text;
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="Sass_Extend" class="main-section">
+                            <header>Sass @extend</header>
+                            <label for="p15"><b>Sass @extend Directive</b></label>
+                            <p id="p15">The <code>@extend</code> directive lets you share a set of CSS properties from
+                                one
+                                selector to another<br>
+                                The <code>@extend</code> directive is useful if you have almost identically styled
+                                elements
+                                that only differ in some small details<br>
+                                The following Sass example first creates a basic style for buttons (this style will be
+                                used
+                                for most buttons). Then, we create one style for a "Report" button and one style for a
+                                "Submit" button. Both "Report" and "Submit" button inherit all the CSS properties from
+                                the
+                                .button-basic class, through the <code>@extend</code> directive. In addition, they have
+                                their own colors defined</p>
+                            <div class="row">
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-dark bg-light h-100">
+                                        <div class="card-header">
+                                            <p>SCSS Syntax:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-report  {
+    @extend .button-basic;
+    background-color: red;
+}
+ 
+.button-submit  {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card text-light bg-info h-100">
+                                        <div class="card-header">
+                                            <p>CSS Output:</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre>
+.button-basic, 
+.button-report, 
+.button-submit {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-report  {
+    background-color: red;
+}
+
+.button-submit  {
+    background-color: green;
+    color: white;
+}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p id="p16">
+                                By using the <code>@extend</code> directive, you do not need to specify several classes
+                                for
+                                an element in your HTML code, like this: <br>&ltbutton
+                                <span class="text-danger">class</span>="button-basic button-report"&gt Report
+                                this&lt/button&gt <br>
+                                You just need to specify .button-report to get both sets of styles.<br>
+                                The <code>@extend</code> directive helps keep your Sass code very DRY.
+                            </p>
+                            <div class="d-flex justify-content-end mb-3">
+                                <a class="btn btn-danger rounded-circle" href="#logo" role="button"><i
+                                        class="fas fa-chevron-up"></i></a>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

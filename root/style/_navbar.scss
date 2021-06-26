@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+	#navbar {
+		height: 100vh;
+		ul {
+			border-top: 2px solid white;
+			border-bottom: 2px solid white;
+		}
+	}
+
+	#base {
+		border-left: 20px solid #ffffff;
+	}
+}
+#navbar {
+	position: relative;
+	border-width: 0;
+}

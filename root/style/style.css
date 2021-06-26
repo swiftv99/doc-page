@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+:root {
+  --color-darkblue: #1b1b32;
+  --font-main: "Poppins", sans-serif;
+  --font-sub: "Delius", cursive;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+#base::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(115deg, #f8edeb, #d8e2dc), url("../images/bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#base {
+  position: relative;
+}
+
+#base li,
+#base p {
+  font-size: 1.1rem;
+}
+
+#brand {
+  font-family: var(--font-sub);
+  font-weight: 400;
+}
+
+#logo {
+  height: 4rem;
+  width: auto;
+}
+
+h1,
+header,
+h4 {
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--font-sub);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+header {
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+@media (min-width: 768px) {
+  #navbar {
+    height: 100vh;
+  }
+  #navbar ul {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  #base {
+    border-left: 20px solid #ffffff;
+  }
+}
+
+#navbar {
+  position: relative;
+  border-width: 0;
+}
+
+body {
+  position: relative;
+}
+
+a:hover {
+  color: #1e2c4e;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
